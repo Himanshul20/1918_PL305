@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <title>Employee Records</title>  
+
+</head>  
+<body>
+<center>
+<table class="table table-striped table-bordered table-sm">  
+    <thead class="thead-dark">  
+    <tr>
+        <th>S.No.</th>
+        <th>AWB Number</th>
+        <th>Sender </th>
+        <th>Origin</th>
+        <th>S_Mobile</th>
+        <th>Receiver </th>
+        <th>Destination</th>
+        <th>R_mobile</th>
+
+    </tr>  
+    </thead>  
+    <tbody>
+{% for B in sbook %}
+    <tr>
+        <td>{{ B.id }}</td>
+        <td>{{ B.AWB }}</td>
+        <td>{{ B.sfname }} {{ B.slname }}</td>
+        <td>{{ B.sstate }}</td>
+        <td>{{ B.smobile }}</td>
+        <td>{{ B.Rfname }} {{ B.Rfname }}</td>
+        <td>{{ B.Rstate }}</td>
+        <td>{{ B.Rmobile }}</td>
+
+
+
+        <td>
+
+            <a href="/edit/{{ B.id }}"><span class="glyphicon glyphicon-pencil" >Edit</span></a>
+            <a href="/delete/{{ B.id }}">Delete</a>
+        </td>  
+    </tr>  
+{% endfor %}  
+    </tbody>  
+</table>  
+<br>  
+<br>  
+</center>
+</body>  
+</html>  </title>
+</head>
+<body>
+
+</body>
+</html>
+
+<input type="">
